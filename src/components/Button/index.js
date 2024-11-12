@@ -1,13 +1,3 @@
-import React from 'react'
+import Button from "./Button";
 
-import { ButtonContainer } from './styles';
-
-function Button({onClick}) {
-  return (
-    <ButtonContainer onClick={onClick}>
-       Buscar
-    </ButtonContainer>
-  )
-}
-
-export default Button
+export default Button;

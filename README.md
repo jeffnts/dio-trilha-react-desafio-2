@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# GitHub Repository Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+<a href="https://web.dio.me/home">
+<img  width="200"  height="100"  src="https://hermes.digitalinnovation.one/assets/diome/logo.svg">
+</p>
 
-## Available Scripts
+Este projeto é uma aplicação React que permite buscar repositórios no GitHub e gerenciar uma lista de repositórios encontrados.
 
-In the project directory, you can run:
+## Funcionalidades
+
+- Buscar repositórios no GitHub
+- Adicionar repositórios à lista
+- Remover repositórios da lista
+- Limpar toda a lista de repositórios
+- Exibir mensagens de erro usando um componente Toast
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Executa a aplicação em modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-la no navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A página será recarregada quando você fizer alterações.\
+Você também verá quaisquer erros de lint no console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o executor de testes no modo interativo de observação.\
+Veja a seção sobre [executar testes](https://facebook.github.io/create-react-app/docs/running-tests) para mais informações.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compila a aplicação para produção na pasta `build`.\
+Ele corretamente agrupa o React no modo de produção e otimiza a construção para o melhor desempenho.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A compilação é minificada e os nomes dos arquivos incluem os hashes.\
+Sua aplicação está pronta para ser implantada!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Veja a seção sobre [implantação](https://facebook.github.io/create-react-app/docs/deployment) para mais informações.
 
-### `npm run eject`
+## Estrutura do Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `src/components`: Contém os componentes reutilizáveis, como `Input`, `Button`, `ItemRepo` e `Toast`.
+- `src/services`: Contém a configuração do Axios para fazer requisições à API do GitHub.
+- `src/styles`: Contém os estilos globais e específicos dos componentes.
+- `src/App.js`: Componente principal que gerencia o estado e a lógica da aplicação.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Como Usar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Digite o nome do repositório que deseja buscar no campo de entrada.
+2. Pressione Enter ou clique no botão "Buscar" para buscar repositórios no GitHub.
+3. Os repositórios encontrados serão adicionados à lista, a menos que já existam na lista.
+4. Use o botão "Remover" para remover um repositório específico da lista.
+5. Use o botão "Limpar" para remover todos os repositórios da lista.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Dependências
 
-## Learn More
+- React
+- Axios
+- Styled-components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contribuição
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Sinta-se à vontade para contribuir com este projeto. Você pode abrir issues e enviar pull requests.
 
-### Code Splitting
+## Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto está licenciado sob a licença MIT.

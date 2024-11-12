@@ -11,3 +11,11 @@ export const Container = styled.div`
     align-items: center;
     justify-content: flex-start;
 `
+
+export const RepoList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 80%;
+`;
